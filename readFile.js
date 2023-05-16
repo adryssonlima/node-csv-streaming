@@ -2,12 +2,12 @@ import fs from 'fs';
 import csv from 'csv-parser';
 import { Writable, Transform } from 'stream';
 import AWS from 'aws-sdk';
-import config from './config';
+import config from './config.js';
 
 // Confgigura o acesso ao Dynamo
 AWS.config.update({
   accessKeyId: config.accessKeyId,
-  secretAccessKey: secretAccessKey.secretAccessKey,
+  secretAccessKey: config.secretAccessKey,
   region: config.region
 });
 
