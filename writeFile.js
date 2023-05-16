@@ -3,8 +3,9 @@ import fs from 'fs'
 const filename = 'file.csv';
 
 function generateCSVLine(index) {
-  // Gere uma linha CSV com base no índice
-  return `${index};Nome ${index}`;
+  // Gere uma linha CSV com base no índice headers: customerId;DiscountMechanics
+  // return `poc-${index};Nome ${index}`;
+  return `poc-${index};{}`;
 }
 
 function writeCSVFile() {
